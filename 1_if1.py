@@ -23,3 +23,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+def activity (age):
+    print = input ('Пожалуйста, введите Ваш возраст: ')
+    if age <= 7:
+        return ('Вы ходите в детский сад')
+    if age >=7 and age <=18 :
+        return (" Вы учитесь в школе")
+    if age >=18 and age <=25:
+        return (' Вы учитесь в ВУЗе')
+    if age >=25 and age <=65:
+        return ('Вы работаете')
+
+print (activity (4))
+print (activity (15))
+print (activity (23))
+print (activity (37))

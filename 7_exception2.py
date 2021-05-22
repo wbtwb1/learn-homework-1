@@ -17,7 +17,12 @@ def discounted(price, discount, max_discount=20)
     """
     Замените pass на ваш код
     """
-    pass
+    def discounted(price, discount, max_discount=20):
+      try:
+        discounted_price = price - (price * discount / 100)
+        print (discounted_price)
+      except (ValueError, TypeError):
+        print ('Введите число больше или равно 20')
     
 if __name__ == "__main__":
     print(discounted(100, 2))

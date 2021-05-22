@@ -24,3 +24,17 @@ def main():
     
 if __name__ == "__main__":
     main()
+def strokes (one, two): 
+    if type(one)!=str and type(two)!= str:
+        return 0
+    elif one == two: 
+        return 1
+    elif one!=two and len (one) > len (two):
+        return 2
+    elif one!=two and two==('learn'):
+        return 3
+
+print (strokes(1,2))
+print (strokes ('dance', 'dance'))
+print (strokes ('Hello', 'lol'))
+print (strokes('py', 'learn'))

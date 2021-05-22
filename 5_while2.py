@@ -25,3 +25,24 @@ def ask_user(answers_dict):
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)
+
+# Через цикл for
+dict = {
+    'Как дела?' : 'Хорошо!', 'Что делаешь?':'Программирую', 'Пойдешь обедать?': 'Конечно' 
+}
+for q, a in dict.items():
+        print (q)
+        print (a)
+
+dialogue = {
+    'Как дела?' : 'Хорошо!', 'Что делаешь?':'Программирую', 'Пойдешь обедать?': 'Конечно' 
+}
+while True:
+    ask_user = input ('Введите вопрос: ')
+    if ask_user == 'Как дела?':
+        print ('Хорошо!')
+    if ask_user == 'Что делаешь?':
+        print ('Программирую')  
+    if ask_user == 'Пойдешь обедать?':
+        print ('Конечно')  
+        break
